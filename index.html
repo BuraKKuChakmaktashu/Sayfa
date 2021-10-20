@@ -6,18 +6,34 @@
 </head>
 
 <style> body {background-color:#181818;}
-h1 {color: red; text-align: center;font-size: 50px;}
-p{font-family: verdana;font-size: 23px;color:white;} 
-a:active{color : blue;}
+h1 {color: red; text-align:center; font-size:50px;font-family:'Courier New', monospace;}
+p{font-family: verdana; font-size:23px; color:white;} 
+a:visited {text-decoration: none;color: yellow; }
+li{font-family:verdana; font-size:23px; color:green;}
 </style>
 
 <body> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { mybutton.style.display = "block";} 
+	else {mybutton.style.display = "none";} }
+
+function topFunction() {document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}</script>
 
 <div class="topnav">
   <a class="active" href="#HM">Heavy Metal</a>
   <a class="active" href="#DM">Death Metal</a>
   <a class="active" href="#TM">Thrash Metal</a>
   <a class="active" href="#NM">Nu Metal</a>
+  <a href="https://www.youtube.com/channel/UCHpbxYJ3IAHzXP0tQFqjddw" target="_blank" style="float:right; width:40px;height:40px";><img src="yt.png"title ="Youtube Hesabım" alt="Youtube Logo" style="float:right; width:40px;height:40px";></a>
+  <a href="https://www.facebook.com/burakcts/" target="_blank" style="float:right; width:40px;height:40px";><img src="fc.png"title ="Facebook Hesabım" alt="Facebook Logo" style="float:right; width:40px;height:40px";></a>
   <input type="text" placeholder="Search..">
 </div>
 
@@ -34,9 +50,18 @@ Judas Priest, Heavy metali Blues türünün etkisinden kurtararak bu türün gel
 Iron Maiden gibi New Wave of British Heavy Metal akımından etkilenen gruplar da bu gelişmeyi devam ettirmiş ve 1970'li yılların sonunda heavy metal dünya çapında hayran kitlesine ulaşmış, 
 türün hayranlarına İngilizcede "metalhead" ve "headbanger" denmeye başlamıştır.</br></br>
 
-<font color="blue"> Favori Heavy Metal gruplarım:Judas Priest,Manovar,Black Sabbath</font></br>
-<font color="yellow"> Favori Heavy Metal şarkılarım:<a href="https://www.youtube.com/watch?v=uk_wUT1CvWM" target="_blank">Paranoid</a>,
-<a href="https://www.youtube.com/watch?v=kO_EdmtR5Ck" target="_blank">Painkiller</a>,<a href="https://www.youtube.com/watch?v=l_WMHg8c_4I" target="_blank">Book Of Heavy Metal</a></font></br></br></p>
+<font color="2A9FCF;"> Favori Heavy Metal gruplarım</font>
+<ul>
+  <li>Judas Priest</li>
+  <li>Manovar</li>
+  <li>Black Sabbath</li>
+</ul>  <font color="lightblue",font size ="5";> Favori Heavy Metal şarkılarım</font>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=uk_wUT1CvWM" target="_blank">Paranoid</a></li>
+  <li><a href="https://www.youtube.com/watch?v=kO_EdmtR5Ck" target="_blank">Painkiller</a></li>
+  <li><a href="https://www.youtube.com/watch?v=l_WMHg8c_4I" target="_blank">Book Of Heavy Metal</a></li>
+</ul>  
+
 
 <h1><b><a name ="DM"></a> Death Metal </b></h1>
 <img src="dm.jpg"  title ="Death Metal" alt="Death Metal" style="float:right;width:600px;height:300px;"> 
@@ -47,9 +72,17 @@ derin bir şekilde hırlanan vokaller, çift pedallı bas davulunun sertçe kull
  minör anahtarlar ve ahenksizlik, ani tempo ve ölçü değişiklikleri ile diğer metal türlerinden ayırt edilebilir.Tıpkı diğer metal türleri gibi sözlerde çeşitlilik çok olsa da, 
 genelde vahşetli şiddet, siyasi kavgalar, doğa, felsefe ve bilim kurgu gibi konular ele alınır.</br></br>
 
-<font color="blue"> Favori Death Metal gruplarım:Gojira,Cannibal Corpse,Fear Factory</br></font>
-<font color="yellow"> Favori Death Metal şarkılarım:The haviest matter of the universe,From the sky,Scourge of iron,Zero signal</font></br></br></p>
-
+<font color="2A9FCF;"> Favori Death Metal gruplarım</font>
+<ul>
+  <li>Gojira</li>
+  <li>Cannibal Corpse</li>
+  <li>Fear Factory</li>
+</ul>  <font color="lightblue",font size ="5";> Favori Death Metal şarkılarım</font>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=6DPhFpZW5a8" target="_blank">The heaviest matter of the universe</a></li>
+  <li><a href="https://www.youtube.com/watch?v=uaFzmZrKKKw" target="_blank">Scourge of Iron</a></li>
+  <li><a href="https://www.youtube.com/watch?v=HNvqcwIV8B0" target="_blank">Zero Signal</a></li>
+</ul>
 
 <h1><b><a name ="TM"></a> Thrash Metal </b></h1>
 <img src="TM.jpg"title ="Thrash Metal" alt="Thrash Metal" style="float:right;width:600px;height:300px;"> 
@@ -59,9 +92,19 @@ genelde vahşetli şiddet, siyasi kavgalar, doğa, felsefe ve bilim kurgu gibi k
 Sözel olarak aşırı çeşitlilik olsa da, en yaygın sözel ögeleri toplumsal konular, savaşlar, sistem eleştirileri üstüne kuruludur. 
 Bu tür sözlerde kullanılan dil genelde thrash metalin köklerinden biri olan hardcore punk ile benzerlik gösterir.</br></br>
 
-<font color="blue"> Favori Thrash Metal gruplarım:Metallica,Slayer,Megadeth,Sepultura</br></font>
-<font color="yellow"> Favori Thrash Metal şarkılarım:Dyers eve,Battery,Ratamahatta,Angel Of Death</font></p>
-
+<font color="2A9FCF;"> Favori Death Metal gruplarım</font>
+<ul>
+  <li>Metallica</li>
+  <li>Slayer</li>
+  <li>Megadeth</li>
+  <li>Sepultura</li>
+</ul>  <font color="lightblue",font size ="5";> Favori Death Metal şarkılarım</font>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=v6kb5fvv6_A" target="_blank">Dyers Eve</a></li>
+  <li><a href="https://www.youtube.com/watch?v=md3B3I7Nmvw" target="_blank">Battery</a></li>
+  <li><a href="https://www.youtube.com/watch?v=ZeWICOwGkkU" target="_blank">Ratamahatta</a></li>
+  <li><a href="https://www.youtube.com/watch?v=TnRZhLRv6eM" target="_blank">Angel Of Death</a></li>
+</ul>
 
 <h1><a name ="NM"></a> Nu Metal </b></h1>
 <img src="NM.jpg" width="700" title ="Nu Metal" alt="Nu Metal"style="float:right;width:600px;height:300px;"> 
@@ -70,9 +113,19 @@ Bu tür sözlerde kullanılan dil genelde thrash metalin köklerinden biri olan 
 Biçimsel olarak, farklı müzik türlerinin ritmik öğeleriyle, post-hardcore gitar rifflerinin buluşması bu müziğin temelini oluşturur. 
 1990'lı yılların ortasında ortaya çıkan New Wave of American Heavy Metal akımı ile kendini göstermiştir.</br></br>
 
-<font color="blue"> Favori Nu Metal gruplarım:Slipknot,System Of A Down,Korn</br></font>
-<font color="yellow"> Favori Nu Metal şarkılarım:Wait and Bleed,All Hope Is Gone,Dreaming,B.Y.O.B,Freak On A Leash</font></p>
+<font color="2A9FCF;"> Favori Heavy Metal gruplarım</font>
+<ul>
+  <li>Slipknot</li>
+  <li>System Of A Down</li>
+  <li>Korn</li>
+</ul>  <font color="lightblue",font size ="5";> Favori Heavy Metal şarkılarım</font>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=B1zCN0YhW1s" target="_blank">Wait and Bleed</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Wn2w3j_xmbw" target="_blank">All Hope Is Gone</a></li>
+  <li><a href="https://www.youtube.com/watch?v=wVO7zmHfedw" target="_blank">Dreaming</a></li>
+  <li><a href="https://www.youtube.com/watch?v=CwiNlXybbrI" target="_blank">B.Y.O.B</a></li>
+  <li><a href="https://www.youtube.com/watch?v=msPMIbrNEj8" target="_blank">Freak On A Leash</a></li>
+</ul>  
 
 </body>
-
 </html>
